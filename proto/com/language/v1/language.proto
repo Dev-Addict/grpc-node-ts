@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package com.language.v1;
+
+message Language {
+  enum Code {
+    CODE_UNSPECIFIED = 0;
+    CODE_EN = 1;
+    CODE_FA = 2;
+  }
+}

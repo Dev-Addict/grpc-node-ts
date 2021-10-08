@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+import "com/language/v1/language.proto";
+
+package services.hello.v1;
+
+service HelloService {
+  rpc Greet(GreetRequest) returns (GreetResponse) {}
+}
+
+message GreetRequest {
+  string name = 1;
+  com.language.v1.Language.Code language_code = 2;
+}
+
+message GreetResponse {
+  string greeting = 1;
+  reserved "language_code";
+  reserved 2;
+}
