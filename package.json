@@ -6,7 +6,8 @@
   "scripts": {
     "start": "nodemon src/server/index.ts --watch src/server",
     "start:client": "nodemon src/client/index.ts --watch src/client",
-    "proto:build": "cd proto; buf build; cd .."
+    "proto:build": "cd proto; buf build; cd ..",
+    "codegen:buf": "cd proto; buf generate; cd .."
   },
   "keywords": [],
   "author": "",
